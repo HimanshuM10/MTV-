@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTV List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MTV List</h1>
+
+    <form id="createForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" required>
+
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" name="image" required>
+
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" required>
+
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status" required>
+
+      <button type="button" onclick="createMTV()">Create MTV</button>
+    </form>
+
+    <div id="result"></div>
+
+    <button onclick="getAllMTV()">Get All MTV</button>
+    <button onclick="getMTVById()">Get MTV by ID</button>
+    <button onclick="editMTV()">Edit MTV</button>
+    <button onclick="deleteMTV()">Delete MTV</button>
+    <div class="container">
+        <h1>MTV List</h1>
+    
+        <form id="createForm">
+          <!-- ... (previous form code) -->
+        </form>
+    
+        <div id="result" class="result-container">
+          <h2>MTV List</h2>
+          <ul id="mtvList"></ul>
+        </div>
+    
+        <!-- ... (previous buttons) -->
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
